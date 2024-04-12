@@ -45,7 +45,9 @@ function App() {
               ]
             },{
               headers: {
-                Authorization: "Zoho-oauthtoken 1000.aa0d97e0a437a09e5540b0a50a195eaa.8cf91bd2523628a515377f0f26c80355"
+                "Authorization": "Zoho-oauthtoken 1000.aa0d97e0a437a09e5540b0a50a195eaa.8cf91bd2523628a515377f0f26c80355",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true
               }
             }).then((e)=>{
               console.log('sucess', e)
